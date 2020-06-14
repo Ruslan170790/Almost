@@ -5,23 +5,19 @@ namespace HelloApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the first number");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the second number");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-                if (num1 > num2)
+            Console.WriteLine("Введите число");
+            int num = Convert.ToInt32(Console.ReadLine());
+           
+            if (num > 5 && num < 10) 
             {
-                Console.WriteLine("The first number is greater than the second");
-            }
-            else if (num1 < num2)
-            {
-                Console.WriteLine("The first number is less than the second");
+                Console.WriteLine("Число больше 5 и меньше 10");
             }
             else
             {
-                Console.WriteLine("Both numbers are equal");
+                Console.WriteLine("Не известное значение");
             }
             Console.ReadKey();
+
         }
     }
 }
